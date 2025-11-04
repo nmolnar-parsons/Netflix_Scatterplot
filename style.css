@@ -1,0 +1,140 @@
+
+
+p1{
+    text-align: left;
+    font-size: 14px;
+    margin: 20px 20px 10px 40px;
+    color: #e50914;
+}
+
+.scatter_x-axis text, .scatter_y-axis text {
+    fill: white;
+    font-size: 12px;
+}
+.scatter_x-axis path, .scatter_x-axis line, .scatter_y-axis path, .scatter_y-axis line {
+    stroke: white;
+}
+
+.bar_x-axis text, .bar_y-axis text {
+    fill: white;
+    font-size: 12px;
+}
+.bar_x-axis path, .bar_x-axis line, .bar_y-axis path, .bar_y-axis line {
+    stroke: white;
+}
+
+
+body {
+    background-color: rgb(185, 83, 83);
+}
+
+.psuedo_footer {
+    margin: 10px;
+    font-size: 12px;
+    color: #e50914;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(13, 13, 13);
+    /* I need to do this here my CSS file is not doing it */
+}
+h1 {
+    text-align: left;
+    font-size: 50px;
+    margin: 20px 20px 10px 40px;
+    color: #e50914;
+    fill: white;
+}
+
+#footer_link {
+    margin: 0;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: #e50914;
+    text-decoration: underline;
+}
+#footer_text {
+    margin: 0;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #e50914;
+}
+#top10 {
+    height: 90vh;
+    width: auto;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: black;
+}
+
+h4 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+/* footer {
+    bottom: 0;
+    z-index: 100;
+    background: black; 
+    width: 100%;
+    padding: 10px 0;
+} */
+#content {
+    position: relative;
+    background: transparent;
+    overflow-y: auto;
+    margin-bottom: 50px;
+    display: flex; /* Make content a flex container */
+    flex-direction: row; /* Horizontal layout: menu left, plots right */
+    align-items: flex-start;
+}
+
+/* Menu styling for vertical alignment */
+#menu {
+    min-width: 120px;
+    max-width: 140px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: transparent;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+#plots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1 1 0%;
+}
+
+.top-menu {
+  margin-bottom: 20px;
+  z-index: 10;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filters {
+  flex-direction: column;
+  display: flex ;
+}
+
+.checkbox-genre {
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-genre label {
+  color: white;
+  white-space: nowrap;
+  margin-left: 8px;
+}
