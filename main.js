@@ -170,8 +170,6 @@ function initializeLayout(){
         .attr("class", "scatter_y-axis")
         .attr("transform", `translate(${margins.left},0)`);
 
-
-
     // Barplot
     const barplot_svg = d3.select("#plots")
         .append("svg")
@@ -214,7 +212,7 @@ function initializeLayout(){
 
 
     topmenu.append("div").attr("class", "description").html(`
-      <h4> The decision to watch or not watch a movie can come down to first impressions: how long is it? What is it called?
+      <h4> The decision to watch or not watch a movie can be based on simple facts: how long is the movie? What is it called?
       </h4>
     `);
 }
