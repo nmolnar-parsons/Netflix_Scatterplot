@@ -32,7 +32,7 @@
 
 
 let dimensions = [window.innerWidth/2.2, window.innerHeight*0.8] // dimensions shared for each plot
-let margins = {top: 20, right: 50, bottom: 30, left: 40};
+let margins = {top: 20, right: 50, bottom: 30, left: 50};
 
 
 
@@ -120,7 +120,7 @@ function initializeLayout(){
     const topmenu = d3.select("#menu").append("div").attr("class","top-menu");
 
     topmenu.append("div").attr("class", "title").html(`
-      <h4>Select a Genre</h4>
+      <h3>Select Genres</h3>
     `);
     topmenu.append("div").attr("class", "filters");
 
@@ -170,7 +170,8 @@ function initializeLayout(){
         .attr("class", "scatter_y-axis")
         .attr("transform", `translate(${margins.left},0)`);
 
-    
+
+
     // Barplot
     const barplot_svg = d3.select("#plots")
         .append("svg")
@@ -187,6 +188,16 @@ function initializeLayout(){
         .attr("class", "bar_y-axis")
         .attr("transform", `translate(${margins.left},0)`);
 
+    // Add barplot x-axis label
+    barplot_svg.append("text")
+        .attr("class", "bar_x-label")
+        .attr("x", (svgWidth - margins.left - margins.right) / 2 + margins.left)
+        .attr("y", svgHeight - 1)
+        .attr("text-anchor", "middle")
+        .attr("fill", "#fff")
+        .attr("font-size", "16px")
+        .text("Words in Titles");
+
     // Add tooltip div (hidden by default)
     d3.select("body")
         .append("div")
@@ -200,6 +211,12 @@ function initializeLayout(){
         .style("font-size", "14px")
         .style("z-index", "1000")
         .style("display", "none");
+
+
+    topmenu.append("div").attr("class", "description").html(`
+      <h4> The decision to watch or not watch a movie can come down to first impressions: how long is it? What is it called?
+      </h4>
+    `);
 }
 
 function onCheckboxChange(genre){

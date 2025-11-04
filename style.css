@@ -71,9 +71,16 @@ header {
     background: black;
 }
 
+
+h3 {
+    color: white;
+    margin-bottom: 8px;
+}
+
 h4 {
     color: white;
     margin-bottom: 8px;
+    margin-left: 8px;
 }
 
 /* footer {
