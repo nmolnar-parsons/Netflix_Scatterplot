@@ -20,6 +20,24 @@
 
 
 
+// Feedback
+    //border for the points
+    // label axes
+    //action/animation story is the most interesting story - don't bury the lede
+        // jump to buttons?
+
+    // what lense to take on the words/titles question?
+        // is this to predict which titles are more popular?
+        // is this to show which words are overrepresented?
+
+
+
+
+
+
+
+
+
 
 
 
